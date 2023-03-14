@@ -3,7 +3,7 @@
 //  Extensions
 //
 //  Created by Amine Bensalah on 12/06/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
+//  Copyright © 2019 BENSALAH. All rights reserved.
 //
 
 import UIKit

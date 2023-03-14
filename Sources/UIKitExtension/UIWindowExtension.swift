@@ -2,8 +2,8 @@
 //  MainWindow.swift
 //  Binders
 //
-//  Created by BENSALA on 10/04/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
+//  Created by BENSALAH on 10/04/2019.
+//  Copyright © 2019 BENSALAH. All rights reserved.
 //
 
 import UIKit
