@@ -1,11 +1,4 @@
-//
-//  UIViewControllerExtension.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 30/04/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 /// Extension for add & remove UIViewController in container
@@ -153,3 +146,4 @@ extension UIViewController {
         traitCollection.horizontalSizeClass == .regular
     }
 }
+#endif

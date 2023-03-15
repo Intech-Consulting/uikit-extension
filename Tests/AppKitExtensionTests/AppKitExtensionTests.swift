@@ -1,10 +1,3 @@
-//
-//  AppKitExtensionTests.swift
-//  
-//
-//  Created by amine on 20/02/2023.
-//
-
 import XCTest
 
 final class AppKitExtensionTests: XCTestCase {

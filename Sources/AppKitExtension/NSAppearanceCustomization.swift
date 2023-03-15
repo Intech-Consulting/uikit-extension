@@ -1,7 +1,7 @@
-#if canImport(UIKit)
-import UIKit
+#if canImport(NSAppearanceCustomization)
+import NSAppearanceCustomization
 
-extension UIAppearance {
+extension NSAppearanceCustomization {
     @discardableResult
     public func style(_ styleClosure: (Self) -> Swift.Void) -> Self {
         styleClosure(self)

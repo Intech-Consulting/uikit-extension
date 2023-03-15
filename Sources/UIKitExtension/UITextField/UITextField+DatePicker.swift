@@ -1,11 +1,4 @@
-//
-//  UITextField+DatePicker.swift
-//  Extensions
-//
-//  Created by BENSALA on 24/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UITextField {
@@ -110,3 +103,4 @@ extension NSObjectProtocol where Self: UITextField {
         return self
     }
 }
+#endif

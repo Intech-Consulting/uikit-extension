@@ -1,11 +1,4 @@
-//
-//  UIViewControllerErrors.swift
-//  Extensions
-//
-//  Created by BENSALA on 14/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIViewController {
@@ -18,3 +11,4 @@ extension UIViewController {
         return alert
     }
 }
+#endif

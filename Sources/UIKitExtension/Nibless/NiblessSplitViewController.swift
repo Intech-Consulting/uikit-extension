@@ -1,11 +1,4 @@
-//
-//  NiblessSplitViewController.swift
-//  Extensions
-//
-//  Created by BENSALA on 14/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 open class NiblessSplitViewController: UISplitViewController {
@@ -27,3 +20,4 @@ open class NiblessSplitViewController: UISplitViewController {
         fatalError("Loading this view controller from nib is unsupported in favor of initializer dependency injection")
     }
 }
+#endif

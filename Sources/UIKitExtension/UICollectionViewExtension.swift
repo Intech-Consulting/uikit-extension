@@ -1,11 +1,4 @@
-//
-//  UICollectionViewExtensions.swift
-//  Extensions
-//
-//  Created by BENSALA on 13/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UICollectionView {
@@ -43,3 +36,4 @@ extension UICollectionView {
         })
     }
 }
+#endif

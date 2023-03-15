@@ -1,11 +1,4 @@
-//
-//  TableViewDataSource.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 28/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 public protocol SectionProtocol {
@@ -153,3 +146,4 @@ extension NSObjectProtocol where Self: UITableView {
         return self
     }
 }
+#endif

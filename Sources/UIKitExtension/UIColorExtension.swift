@@ -1,11 +1,4 @@
-//
-//  ColorExtension.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 12/06/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIColor {
@@ -30,3 +23,4 @@ extension UIColor {
                 alpha: 1.0)
     }
 }
+#endif

@@ -1,11 +1,4 @@
-//
-//  UITextView+ToolBar.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 25/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UITextView {
@@ -25,3 +18,4 @@ extension UITextView {
         resignFirstResponder()
     }
 }
+#endif

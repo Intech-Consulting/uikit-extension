@@ -1,11 +1,4 @@
-//
-//  PickerScrollerService.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 25/05/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIResponder {
@@ -77,3 +70,4 @@ public class PickerScrollerService {
         self.removeObserver()
     }
 }
+#endif

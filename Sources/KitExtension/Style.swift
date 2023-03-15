@@ -1,14 +1,12 @@
-//
-//  Style.swift
-//  Extensions
-//
-//  Created by BENSALA on 26/04/2019.
-//  Copyright © 2019 BENSALA. All rights reserved.
-//
-
+#if os(macOS)
+import AppKit
+public typealias KitView = NSView
+#elseif os(iOS)
 import UIKit
+public typealias KitView = UIView
+#endif
 
-public struct Style<View: UIView> {
+public struct Style<View: KitView> {
     public let style: (View) -> Void
 
     public init(style: @escaping (View) -> Void) {
@@ -26,7 +24,25 @@ public struct Style<View: UIView> {
     }
 }
 
-extension UIView {
+extension Style {
+    /// Marges two styles together.
+    public func adding<V>(_ other: Style<V>) -> Style {
+        Style {
+            self.apply(to: $0)
+            other.apply(to: $0 as! V) // swiftlint:disable:this force_cast
+        }
+    }
+
+    /// Returns current style modified by the given closure.
+    public func modifying(_ other: @escaping (View) -> Void) -> Style {
+        Style {
+            self.apply(to: $0)
+            other($0)
+        }
+    }
+}
+
+extension KitView {
     /// For example: `let nameLabel = UILabel(style: Stylesheet.Profile.name)`.
     public convenience init<V>(style: Style<V>) {
         self.init(frame: .zero)
@@ -51,23 +67,5 @@ extension UIView {
         }
         style.apply(to: view)
         return self
-    }
-}
-
-extension Style {
-    /// Marges two styles together.
-    public func adding<V>(_ other: Style<V>) -> Style {
-        Style {
-            self.apply(to: $0)
-            other.apply(to: $0 as! V) // swiftlint:disable:this force_cast
-        }
-    }
-
-    /// Returns current style modified by the given closure.
-    public func modifying(_ other: @escaping (View) -> Void) -> Style {
-        Style {
-            self.apply(to: $0)
-            other($0)
-        }
     }
 }
