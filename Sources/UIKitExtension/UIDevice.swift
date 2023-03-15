@@ -1,10 +1,4 @@
-//
-//  UIDevice.swift
-//  ApplicationDelegate
-//
-//  Created by Amine Bensalah on 23/06/2019.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIDevice {
@@ -33,3 +27,4 @@ extension UIDevice {
         }
     }
 }
+#endif

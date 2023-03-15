@@ -1,0 +1,25 @@
+import Foundation
+/**********************************/
+// New method for AssociatedObject
+/**********************************/
+
+private class Associated<T>: NSObject {
+    let value: T
+    init(_ value: T) {
+        self.value = value
+    }
+}
+
+public protocol Associable {}
+
+public extension Associable where Self: AnyObject {
+    func getAssociatedObject<T>(_ key: UnsafeRawPointer) -> T? {
+        (objc_getAssociatedObject(self, key) as? Associated<T>).map { $0.value }
+    }
+
+    func setAssociatedObject<T>(_ key: UnsafeRawPointer, _ value: T?) {
+        objc_setAssociatedObject(self, key, value.map { Associated<T>($0) }, .OBJC_ASSOCIATION_RETAIN)
+    }
+}
+
+extension NSObject: Associable {}

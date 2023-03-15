@@ -1,11 +1,4 @@
-//
-//  MainWindow.swift
-//  Binders
-//
-//  Created by BENSALAH on 10/04/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIWindow {
@@ -22,3 +15,4 @@ extension Array where Element == UIWindow {
         forEach { $0.reload() }
     }
 }
+#endif

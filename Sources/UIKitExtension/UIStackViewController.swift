@@ -1,11 +1,4 @@
-//
-//  StackViewController.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 24/05/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 public protocol MasterScrollableViewController: UIViewController {
@@ -88,3 +81,4 @@ extension UIStackViewController {
         child.removeFromParent()
     }
 }
+#endif

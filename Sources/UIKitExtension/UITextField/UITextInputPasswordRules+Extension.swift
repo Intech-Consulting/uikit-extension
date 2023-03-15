@@ -1,10 +1,4 @@
-//
-//  UITextInputPasswordRules+Extension.swift
-//  ApplicationDelegate
-//
-//  Created by Amine Bensalah on 14/07/2019.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 public enum PasswordRule {
@@ -61,3 +55,4 @@ extension UITextInputPasswordRules {
         self.init(descriptor: descriptor)
     }
 }
+#endif

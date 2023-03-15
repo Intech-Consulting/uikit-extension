@@ -1,11 +1,4 @@
-//
-//  CollectionViewDataSource.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 06/06/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 public class CollectionViewDataSource<Model>: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -120,3 +113,4 @@ extension UICollectionView {
         return self
     }
 }
+#endif

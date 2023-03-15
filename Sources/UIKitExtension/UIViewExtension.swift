@@ -1,11 +1,4 @@
-//
-//  UIViewExtension.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 24/05/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIView {
@@ -141,3 +134,4 @@ extension UIView {
         layer.mask = shape
     }
 }
+#endif

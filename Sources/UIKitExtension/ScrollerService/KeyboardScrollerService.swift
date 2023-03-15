@@ -1,11 +1,4 @@
-//
-//  KeyBoardScrollerService.swift
-//  wifi-connect
-//
-//  Created by Amine Bensalah on 24/07/2018.
-//  Copyright © 2018 Amine Bensalah. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 class KeyboardScrollerService {
@@ -68,3 +61,4 @@ class KeyboardScrollerService {
         self.removeObserver()
     }
 }
+#endif

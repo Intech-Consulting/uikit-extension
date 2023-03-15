@@ -1,11 +1,4 @@
-//
-//  UITextField+Extension.swift
-//  Extensions
-//
-//  Created by Amine Bensalah on 12/06/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UITextField {
@@ -19,3 +12,4 @@ extension UITextField {
         layer.addSublayer(bottomBorder)
     }
 }
+#endif

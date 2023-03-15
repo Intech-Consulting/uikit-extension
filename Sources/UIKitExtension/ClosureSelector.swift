@@ -1,11 +1,4 @@
-//
-//  ClosureSelector.swift
-//  Extensions
-//
-//  Created by BENSALAH on 25/04/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import Foundation
 import UIKit
 
@@ -245,3 +238,4 @@ extension NSObjectProtocol where Self: UITextView {
         objc_setAssociatedObject(self, &handleUITextViewDidBeginEditingNotification, closureNotification, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
 }
+#endif

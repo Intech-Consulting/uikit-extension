@@ -1,11 +1,4 @@
-//
-//  UIAlertViewControllerExtension.swift
-//  Extensions
-//
-//  Created by BENSALAH on 14/05/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIAlertController {
@@ -38,3 +31,4 @@ extension UIAlertController {
         return alertController
     }
 }
+#endif

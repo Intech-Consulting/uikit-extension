@@ -1,11 +1,4 @@
-//
-//  UITableViewExtensions.swift
-//  Extensions
-//
-//  Created by BENSALAH on 25/04/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension UITableView {
@@ -226,3 +219,4 @@ extension UITableView {
         })
     }
 }
+#endif

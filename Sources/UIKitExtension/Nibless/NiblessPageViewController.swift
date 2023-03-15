@@ -1,10 +1,4 @@
-//
-//  NiblessPageViewController.swift
-//  ApplicationDelegate
-//
-//  Created by Amine Bensalah on 25/06/2019.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 open class NiblessPageViewController: UIPageViewController {
@@ -28,3 +22,4 @@ open class NiblessPageViewController: UIPageViewController {
         print("deinit => \(NiblessPageViewController.self)")
     }
 }
+#endif

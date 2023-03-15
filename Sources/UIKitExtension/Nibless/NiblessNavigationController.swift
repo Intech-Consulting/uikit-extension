@@ -1,11 +1,4 @@
-//
-//  NiblessNavigationController.swift
-//  Extensions
-//
-//  Created by BENSALAH on 14/05/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 open class NiblessNavigationController: UINavigationController {
@@ -31,3 +24,4 @@ open class NiblessNavigationController: UINavigationController {
         fatalError("Loading this view controller from nib is unsupported in favor of initializer dependency injection")
     }
 }
+#endif

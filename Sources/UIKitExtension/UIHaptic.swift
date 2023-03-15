@@ -4,8 +4,9 @@
 //
 //  Created by Amine Bensalah on 25/10/2019.
 //  https://github.com/efremidze/Haptica
-
+#if canImport(UIKit)
 import UIKit
+import KitExtension
 
 extension UIControl.Event: Hashable {
     public func hash(into hasher: inout Hasher) {
@@ -136,3 +137,4 @@ private class HapticTarget {
         haptic.generate()
     }
 }
+#endif

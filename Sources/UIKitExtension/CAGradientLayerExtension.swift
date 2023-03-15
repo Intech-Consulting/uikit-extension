@@ -1,10 +1,4 @@
-//
-//  CAGradientLayerExtension.swift
-//  ApplicationDelegate
-//
-//  Created by Amine Bensalah on 25/06/2019.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 extension CAGradientLayer {
@@ -60,3 +54,4 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+#endif

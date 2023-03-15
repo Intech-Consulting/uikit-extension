@@ -1,11 +1,3 @@
-//
-//  LoadingState.swift
-//  Extensions
-//
-//  Created by BENSALAH on 02/05/2019.
-//  Copyright © 2019 BENSALAH. All rights reserved.
-//
-
 import Foundation
 
 public enum LoadindState<Resource, Failure: Error> {
