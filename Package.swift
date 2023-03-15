@@ -30,10 +30,10 @@ let package = Package(
             dependencies: []),
         .target(
             name: "UIKitExtension",
-            dependencies: []),
+            dependencies: ["KitExtension"]),
         .target(
             name: "AppKitExtension",
-            dependencies: []),
+            dependencies: ["KitExtension"]),
         .testTarget(
             name: "KitExtensionTests",
             dependencies: ["KitExtension"]),
